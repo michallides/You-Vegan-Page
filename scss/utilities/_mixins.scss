@@ -1,0 +1,24 @@
+/*MIXINS*/
+
+@mixin container($width: 100rem, $padding: 0) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: $padding;
+}
+
+@mixin ease-out {
+  transition: 0.4s all ease-in-out;
+}
+
+// @mixin button($margin: 6rem auto, $padding: 1rem 2rem) {
+//   margin: $margin;
+//   padding: $padding;
+//   font-size: 2.2rem;
+//   font-weight: $bold-font-weight;
+//   text-transform: uppercase;
+//   color: $primary-background-color;
+//   background: $accent-color-2;
+//   border-radius: 3rem;
+//   display: block;
+//   width: max-content;
+// }

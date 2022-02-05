@@ -1,0 +1,55 @@
+// Header
+
+.top-bar {
+  max-width: 120rem;
+  height: 1rem;
+}
+
+.site-header {
+  border-top: 1px solid darken($color-4, 4%);
+  border-bottom: 1px solid darken($color-4, 4%);
+  font-weight: $font-weight-bold;
+  font-size: 1.4rem;
+
+  .container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  width: 24rem;
+  min-width: 24rem;
+}
+
+.menu-list {
+  display: flex;
+  gap: 4rem;
+
+  a {
+    color: $color-2;
+    padding: 1rem;
+
+    &:active,
+    &:hover {
+      color: darken($color-2, 25%);
+    }
+  }
+}
+
+.header-socials-list {
+  margin-left: auto;
+  display: flex;
+  gap: 2rem;
+
+  a {
+    color: $color-3;
+  }
+}
+
+.menu {
+  margin-left: auto;
+}
