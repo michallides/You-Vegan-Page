@@ -1,6 +1,3 @@
-/*MIXINS*/
-/*VARIABLES*/
-/*GENERAL*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
 *,
 *:before,
@@ -380,7 +377,6 @@ template {
   display: none;
 }
 
-/*TYPOGRAPHY*/
 @font-face {
   font-family: 'Simplisicky Fill';
   font-style: normal;
@@ -398,7 +394,6 @@ body {
   font-weight: 400;
 }
 
-/*BUTTONS*/
 .btn {
   margin: 10rem auto;
   padding: 1.5rem 6rem;
@@ -412,11 +407,10 @@ body {
   width: max-content;
 }
 
-/*CAROUSEL*/
 .carousel .container {
   max-width: 100rem;
   margin: 0 auto;
-  padding: 0;
+  padding: 2rem;
 }
 
 .carousel-images {
@@ -514,7 +508,6 @@ body {
   margin-left: auto;
 }
 
-/* HOME */
 #main-home h1 {
   font-family: "Simplisicky Fill", Sans-serif;
   font-size: 6rem;

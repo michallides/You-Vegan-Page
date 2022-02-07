@@ -1,6 +1,4 @@
-/*MIXINS*/
-
-@mixin container($width: 100rem, $padding: 0) {
+@mixin container($width: 100rem, $padding: 2rem) {
   max-width: $width;
   margin: 0 auto;
   padding: $padding;
