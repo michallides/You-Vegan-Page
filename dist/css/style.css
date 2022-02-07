@@ -395,7 +395,7 @@ body {
 }
 
 .btn {
-  margin: 10rem auto;
+  margin: 7rem auto;
   padding: 1.5rem 6rem;
   font-size: 2.2rem;
   font-weight: 600;
@@ -408,9 +408,9 @@ body {
 }
 
 .carousel .container {
-  max-width: 100rem;
+  max-width: 120rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 7rem 2rem;
 }
 
 .carousel-images {
@@ -420,11 +420,11 @@ body {
   position: relative;
 }
 
-.carousel-images .carousel-img-box {
+.carousel-img-box {
   position: relative;
 }
 
-.carousel-images .carousel-img-box:before {
+.carousel-img-box:before {
   content: attr(data-content);
   font-family: "Simplisicky Fill", Sans-serif;
   font-size: 4rem;
@@ -438,7 +438,7 @@ body {
   transition: 0.4s all ease-in-out;
 }
 
-.carousel-images .carousel-img-box:after {
+.carousel-img-box:after {
   content: '';
   position: absolute;
   top: 0;
@@ -451,7 +451,7 @@ body {
   transition: 0.4s all ease-in-out;
 }
 
-.carousel-images .carousel-img-box:hover:after, .carousel-images .carousel-img-box:hover:before, .carousel-images .carousel-img-box:focus:after, .carousel-images .carousel-img-box:focus-within:before {
+.carousel-img-box:hover:after, .carousel-img-box:hover:before, .carousel-img-box:focus:after, .carousel-img-box:focus-within:before {
   opacity: 1;
 }
 
@@ -510,10 +510,11 @@ body {
 
 #main-home h1 {
   font-family: "Simplisicky Fill", Sans-serif;
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 400;
   text-align: center;
-  padding: 2rem 0;
+  margin: 0;
+  padding: 3rem;
 }
 
 #main-home h1 a {
@@ -525,49 +526,55 @@ body {
 }
 
 .labels .container {
-  max-width: 110rem;
+  max-width: 120rem;
   margin: 0 auto;
-  padding: 10rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 5rem 2rem;
 }
 
-.labels .labels-heading {
+.labels-heading {
   flex-basis: max-content;
 }
 
-.labels .labels-heading h2 {
+.labels-heading h2 {
   font-family: "Simplisicky Fill", Sans-serif;
   font-size: 6rem;
   font-weight: 500;
   color: #fafafa;
 }
 
-.labels .v-label-box {
+.v-label-box {
   flex-basis: 15rem;
 }
 
-.labels .secondary-labels {
+.secondary-labels {
   flex-basis: max-content;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.labels .secondary-labels img {
+.secondary-labels img {
   max-width: 8.5rem;
 }
 
-.labels .label {
+.label {
   display: flex;
   align-items: center;
   gap: 5rem;
 }
 
-.labels .label p {
+.label p {
   color: #fafafa;
   font-size: 2.2rem;
   font-weight: 600;
+}
+
+.main-page-vegstory .container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 15rem 3rem 4rem;
 }
 /*# sourceMappingURL=style.css.map */

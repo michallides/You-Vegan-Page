@@ -1,7 +1,6 @@
-@mixin container($width: 100rem, $padding: 2rem) {
+@mixin container($width: 120rem) {
   max-width: $width;
   margin: 0 auto;
-  padding: $padding;
 }
 
 @mixin ease-out {

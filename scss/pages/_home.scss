@@ -1,10 +1,11 @@
 #main-home {
   h1 {
     font-family: $secondary-font-family;
-    font-size: $font-size-5;
+    font-size: $font-size-6;
     font-weight: $font-weight-regular;
     text-align: center;
-    padding: 2rem 0;
+    margin: 0;
+    padding: 3rem;
 
     a {
       color: $color-3;
@@ -12,51 +13,59 @@
   }
 }
 
+// section labels
 .labels {
   background: $color-1;
 
   .container {
-    @include container(110rem, 10rem 0);
+    @include container;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5rem 2rem;
   }
+}
 
-  .labels-heading {
-    flex-basis: max-content;
+.labels-heading {
+  flex-basis: max-content;
 
-    h2 {
-      font-family: $secondary-font-family;
-      font-size: $font-size-5;
-      font-weight: $font-weight-medium;
-      color: $color-4;
-    }
+  h2 {
+    font-family: $secondary-font-family;
+    font-size: $font-size-5;
+    font-weight: $font-weight-medium;
+    color: $color-4;
   }
+}
 
-  .v-label-box {
-    flex-basis: 15rem;
+.v-label-box {
+  flex-basis: 15rem;
+}
+
+.secondary-labels {
+  flex-basis: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  img {
+    max-width: 8.5rem;
   }
+}
 
-  .secondary-labels {
-    flex-basis: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+.label {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
 
-    img {
-      max-width: 8.5rem;
-    }
+  p {
+    color: $color-4;
+    font-size: $font-size-3;
+    font-weight: $font-weight-bold;
   }
+}
 
-  .label {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-
-    p {
-      color: $color-4;
-      font-size: $font-size-3;
-      font-weight: $font-weight-bold;
-    }
-  }
+// section main-page-vegstory
+.main-page-vegstory .container {
+  @include container;
+  padding: 15rem 3rem 4rem;
 }
