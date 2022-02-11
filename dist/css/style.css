@@ -395,7 +395,6 @@ body {
 }
 
 .btn {
-  margin: 7rem auto;
   padding: 1.5rem 6rem;
   font-size: 2.2rem;
   font-weight: 600;
@@ -405,6 +404,10 @@ body {
   border-radius: 3rem;
   display: block;
   width: max-content;
+}
+
+.carousel {
+  background: #fafafa;
 }
 
 .carousel .container {
@@ -453,6 +456,10 @@ body {
 
 .carousel-img-box:hover:after, .carousel-img-box:hover:before, .carousel-img-box:focus:after, .carousel-img-box:focus-within:before {
   opacity: 1;
+}
+
+.carousel-btn {
+  margin: 7rem auto;
 }
 
 .top-bar {
@@ -513,12 +520,19 @@ body {
   font-size: 7rem;
   font-weight: 400;
   text-align: center;
+  background: #fafafa;
   margin: 0;
   padding: 3rem;
 }
 
 #main-home h1 a {
   color: #7fb927;
+}
+
+#main-home h2 {
+  font-family: "Simplisicky Fill", Sans-serif;
+  font-size: 6rem;
+  font-weight: 500;
 }
 
 .labels {
@@ -531,7 +545,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 2rem;
+  padding: 10rem 2rem;
 }
 
 .labels-heading {
@@ -539,9 +553,6 @@ body {
 }
 
 .labels-heading h2 {
-  font-family: "Simplisicky Fill", Sans-serif;
-  font-size: 6rem;
-  font-weight: 500;
   color: #fafafa;
 }
 
@@ -553,7 +564,6 @@ body {
   flex-basis: max-content;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
 }
 
 .secondary-labels img {
@@ -572,9 +582,77 @@ body {
   font-weight: 600;
 }
 
+.main-page-vegstory {
+  background: #fafafa;
+}
+
+.main-page-vegstory .vegetable-line {
+  transform: translateY(-50%);
+}
+
 .main-page-vegstory .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 15rem 3rem 4rem;
+  padding: 10rem 3rem 15rem;
+  text-align: center;
+}
+
+.main-page-vegstory h2 {
+  margin: 2rem 0;
+}
+
+.main-page-vegstory h2 a {
+  color: black;
+}
+
+.main-page-vegstory .paragraph-box {
+  margin: 0 auto;
+  max-width: 40rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.main-page-vegstory .vegstory-btn {
+  background-color: #e88c30;
+  margin: 3rem auto;
+}
+
+.main-page-vegstory .main-page-vegstory-img {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.main-page-vegshop {
+  background: #f6faef;
+}
+
+.main-page-vegshop .container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem 0 20rem;
+}
+
+.main-page-vegshop-box {
+  max-width: 55%;
+}
+
+.main-page-vegshop-box h2 a {
+  color: black;
+}
+
+.main-page-vegshop-box .paragraph-box {
+  max-width: 55rem;
+  line-height: 1.4;
+}
+
+.main-page-vegshop-img {
+  max-width: 40%;
+}
+
+.vegshop-btn {
+  margin-top: 6rem;
 }
 /*# sourceMappingURL=style.css.map */

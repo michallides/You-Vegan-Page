@@ -1,6 +1,10 @@
-.carousel .container {
-  @include container;
-  padding: 0 7rem 2rem;
+.carousel {
+  background: $color-4;
+
+  .container {
+    @include container;
+    padding: 0 7rem 2rem;
+  }
 }
 
 .carousel-images {
@@ -46,4 +50,8 @@
   &:focus-within:before {
     opacity: 1;
   }
+}
+
+.carousel-btn {
+  margin: 7rem auto;
 }
