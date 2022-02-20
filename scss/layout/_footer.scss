@@ -1,0 +1,116 @@
+footer {
+  background: $text-color;
+
+  .container {
+    @include container(110rem);
+    padding: 8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: $color-4;
+    font-size: $font-size-footer;
+    font-weight: $font-weight-bold;
+
+    a {
+      color: $color-4;
+    }
+  }
+
+  section {
+    width: max-content;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  h3 {
+    display: inline-block;
+    border-bottom: 1px solid $color-4;
+  }
+
+  h3,
+  .logo {
+    margin-top: 0;
+    margin-bottom: 4rem;
+  }
+
+  li {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    i {
+      font-size: $font-size-2;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.contact-list li {
+  margin-bottom: 3rem;
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 3rem;
+
+  i {
+    font-size: $font-size-3;
+  }
+}
+
+.you-vegan h3,
+.products h3 a {
+  text-transform: uppercase;
+  color: $color-2;
+}
+
+.you-vegan-list a {
+  &:hover,
+  &:focus {
+    color: $color-3;
+  }
+}
+
+.veg-news {
+  max-width: 30rem;
+
+  h3 {
+    font-family: $secondary-font-family;
+    font-size: $font-size-4;
+    color: $color-3;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  input,
+  .veg-news-btn {
+    font-size: $font-size-1;
+    border-radius: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  input {
+    background: lighten($text-color, 10%);
+    color: $color-4;
+    margin-top: 1rem;
+  }
+
+  .veg-news-btn {
+    letter-spacing: 0.2rem;
+  }
+}
+
+.copyright {
+  color: $color-4;
+  text-align: center;
+  margin: 0;
+}
