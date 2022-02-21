@@ -3,7 +3,7 @@ footer {
 
   .container {
     @include container(110rem);
-    padding: 8rem 2rem;
+    padding: 8rem 2rem 6rem;
     display: flex;
     justify-content: space-between;
     color: $color-4;
@@ -110,7 +110,9 @@ footer {
 }
 
 .copyright {
+  font-size: $font-size-1;
   color: $color-4;
   text-align: center;
   margin: 0;
+  padding: 2rem 0;
 }

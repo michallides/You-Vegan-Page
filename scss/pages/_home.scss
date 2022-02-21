@@ -1,22 +1,15 @@
 #main-home {
   h1 {
-    font-family: $secondary-font-family;
     font-size: $font-size-6;
-    font-weight: $font-weight-regular;
     text-align: center;
     background: $color-4;
     margin: 0;
-    padding: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
 
     a {
       color: $color-3;
     }
-  }
-
-  h2 {
-    font-family: $secondary-font-family;
-    font-size: $font-size-5;
-    font-weight: $font-weight-medium;
   }
 }
 
