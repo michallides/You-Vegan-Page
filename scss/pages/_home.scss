@@ -81,11 +81,8 @@
     }
   }
 
-  .paragraph-box {
-    margin: 0 auto;
-    max-width: 40rem;
-    font-size: $font-size-2;
-    line-height: 1.4;
+  p {
+    padding-inline: 40rem;
   }
 
   .vegstory-btn {
@@ -95,7 +92,7 @@
 
   .main-page-vegstory-img {
     max-width: 55rem;
-    margin: 0 auto;
+    margin-inline: auto;
   }
 }
 
@@ -119,9 +116,8 @@
     color: $text-color;
   }
 
-  .paragraph-box {
-    max-width: 55rem;
-    line-height: 1.4;
+  p {
+    padding-right: 17rem;
   }
 }
 

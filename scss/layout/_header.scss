@@ -1,4 +1,6 @@
 .site-header {
+  margin-top: 1.5rem;
+  background-color: $color-0;
   border-top: 1px solid darken($color-4, 4%);
   border-bottom: 1px solid darken($color-4, 4%);
   font-weight: $font-weight-bold;
@@ -7,7 +9,7 @@
 
   .container {
     max-width: 130rem;
-    margin: 0 auto;
+    margin-inline: auto;
     padding: 1rem 5rem;
     display: flex;
     align-items: center;

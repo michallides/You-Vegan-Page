@@ -1,1 +1,42 @@
+#main-about {
+  h2 {
+    font-size: $font-size-4;
+  }
+}
 
+.about-info-1 {
+  .container {
+    @include container;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    padding-inline: 20rem;
+  }
+
+  p {
+    padding-inline: 35rem;
+  }
+
+  .coloured-text {
+    color: $color-3;
+  }
+}
+
+.about-info-2 {
+  .container {
+    @include container;
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+  }
+
+  img {
+    max-width: 25%;
+  }
+
+  .about-info-2-box {
+    max-width: 50%;
+  }
+}
