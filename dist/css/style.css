@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+.about-info-1 .container, .about-info-2 .container, .about-info-3 .container, .about-info-4 .container, .labels .container, .main-page-vegstory .container, .main-page-vegshop .container, .main-info .container, .product .container, .message-form .container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 *,
 *:before,
 *:after {
@@ -27,13 +32,7 @@ ol {
 }
 
 input,
-textarea,
-input:hover,
-textarea:hover,
-input:active,
-textarea:active,
-input:focus,
-textarea:focus {
+textarea {
   outline: none;
   box-shadow: none;
   border: none;
@@ -427,6 +426,32 @@ p {
   text-align: center;
 }
 
+.more-btn {
+  border: 1px solid #7fb927;
+  padding: 0.5rem 3rem;
+  color: #7fb927;
+  font-weight: 600;
+  transition: 0.2s all ease-in-out;
+}
+
+.more-btn:hover, .more-btn:focus {
+  background: #7fb927;
+  color: #f6faef;
+}
+
+.send-btn {
+  max-width: 10rem;
+  background: #7fb927;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
 .carousel {
   background: #fafafa;
 }
@@ -460,7 +485,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: 0.4s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .carousel-img-box:after {
@@ -473,7 +498,7 @@ p {
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
   pointer-events: none;
-  transition: 0.4s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .carousel-img-box:hover:after, .carousel-img-box:hover:before, .carousel-img-box:focus:after, .carousel-img-box:focus-within:before {
@@ -615,6 +640,38 @@ footer li p {
   padding: 2rem 0;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  margin-inline: auto;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+form label input,
+form label textarea {
+  padding: 0.8rem;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form label input:focus,
+form label textarea:focus {
+  box-shadow: inset 0 0 0 1px #e6e6e6;
+}
+
+form label textarea {
+  height: 8rem;
+}
+
 .site-header {
   margin-top: 1.5rem;
   background-color: white;
@@ -685,18 +742,18 @@ footer li p {
 }
 
 .about-info-1 .container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 8rem 2rem 3rem;
   text-align: center;
 }
 
 .about-info-1 h2 {
-  padding-inline: 20rem;
+  margin-inline: auto;
+  max-width: 60rem;
 }
 
 .about-info-1 p {
-  padding-inline: 35rem;
+  margin-inline: auto;
+  max-width: 40rem;
 }
 
 .about-info-1 .coloured-text {
@@ -704,19 +761,65 @@ footer li p {
 }
 
 .about-info-2 .container {
-  max-width: 120rem;
-  margin: 0 auto;
+  padding: 3rem 2rem;
   display: flex;
   justify-content: center;
-  gap: 15rem;
+  gap: 15%;
+}
+
+.about-info-2 .container .coloured-text {
+  color: #7fb927;
 }
 
 .about-info-2 img {
-  max-width: 25%;
+  max-width: 17%;
+  align-self: center;
 }
 
 .about-info-2 .about-info-2-box {
   max-width: 50%;
+}
+
+.about-info-3 .container {
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 5%;
+}
+
+.about-info-3 .coloured-text {
+  color: #e88c30;
+}
+
+.about-info-3 img {
+  max-width: 40%;
+  align-self: center;
+}
+
+.about-info-3 .about-info-3-box {
+  max-width: 50%;
+}
+
+.about-info-4 .container {
+  padding: 8rem 2rem;
+}
+
+.about-info-4 .coloured-text {
+  color: #7fb927;
+}
+
+.about-info-4 h2 {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.about-info-4 .photos {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.about-info-4 .photos .photo {
+  max-width: 30rem;
 }
 
 #main-home h1 {
@@ -737,8 +840,6 @@ footer li p {
 }
 
 .labels .container {
-  max-width: 120rem;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -788,8 +889,6 @@ footer li p {
 }
 
 .main-page-vegstory .container {
-  max-width: 120rem;
-  margin: 0 auto;
   padding: 10rem 3rem 15rem;
   text-align: center;
 }
@@ -803,7 +902,8 @@ footer li p {
 }
 
 .main-page-vegstory p {
-  padding-inline: 40rem;
+  max-width: 33rem;
+  margin-inline: auto;
 }
 
 .main-page-vegstory .vegstory-btn {
@@ -821,8 +921,6 @@ footer li p {
 }
 
 .main-page-vegshop .container {
-  max-width: 120rem;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -847,5 +945,61 @@ footer li p {
 
 .vegshop-btn {
   margin-top: 6rem;
+}
+
+.main-info .container {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.main-info h1 {
+  font-size: 6rem;
+  color: #7fb927;
+  margin-bottom: 2rem;
+}
+
+.main-info p {
+  margin-inline: auto;
+  max-width: 50rem;
+}
+
+.product .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9%;
+}
+
+.product h2 {
+  margin: 0 0 2rem;
+}
+
+.product p {
+  margin-bottom: 3rem;
+}
+
+.product-img {
+  max-width: 55%;
+}
+
+.product-box {
+  max-width: 30%;
+}
+
+.message-form .container {
+  padding: 0 2rem 10rem;
+}
+
+.message-form h2 {
+  font-size: 4rem;
+  text-align: center;
+  max-width: 50rem;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+}
+
+.message-form p {
+  text-align: center;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

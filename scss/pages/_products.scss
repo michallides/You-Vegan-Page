@@ -1,0 +1,64 @@
+.main-info {
+  .container {
+    @extend %container;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+
+  h1 {
+    font-size: $font-size-5;
+    color: $color-3;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-inline: auto;
+    max-width: 50rem;
+  }
+}
+
+.product {
+  .container {
+    @extend %container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9%;
+  }
+
+  h2 {
+    margin: 0 0 2rem;
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+}
+
+.product-img {
+  max-width: 55%;
+}
+
+.product-box {
+  max-width: 30%;
+}
+
+.message-form {
+  .container {
+    @extend %container;
+    padding: 0 2rem 10rem;
+  }
+
+  h2 {
+    font-size: $font-size-4;
+    text-align: center;
+    max-width: 50rem;
+    margin-inline: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}

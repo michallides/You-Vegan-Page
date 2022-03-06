@@ -6,17 +6,19 @@
 
 .about-info-1 {
   .container {
-    @include container;
-    padding: 5rem 2rem;
+    @extend %container;
+    padding: 8rem 2rem 3rem;
     text-align: center;
   }
 
   h2 {
-    padding-inline: 20rem;
+    margin-inline: auto;
+    max-width: 60rem;
   }
 
   p {
-    padding-inline: 35rem;
+    margin-inline: auto;
+    max-width: 40rem;
   }
 
   .coloured-text {
@@ -26,17 +28,71 @@
 
 .about-info-2 {
   .container {
-    @include container;
+    @extend %container;
+    padding: 3rem 2rem;
     display: flex;
     justify-content: center;
-    gap: 15rem;
+    gap: 15%;
+
+    .coloured-text {
+      color: $color-3;
+    }
   }
 
   img {
-    max-width: 25%;
+    max-width: 17%;
+    align-self: center;
   }
 
   .about-info-2-box {
     max-width: 50%;
+  }
+}
+
+.about-info-3 {
+  .container {
+    @extend %container;
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 5%;
+  }
+
+  .coloured-text {
+    color: $color-2;
+  }
+
+  img {
+    max-width: 40%;
+    align-self: center;
+  }
+
+  .about-info-3-box {
+    max-width: 50%;
+  }
+}
+
+.about-info-4 {
+  .container {
+    @extend %container;
+    padding: 8rem 2rem;
+  }
+
+  .coloured-text {
+    color: $color-3;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .photos {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+
+    .photo {
+      max-width: 30rem;
+    }
   }
 }

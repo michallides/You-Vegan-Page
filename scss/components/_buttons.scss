@@ -10,3 +10,30 @@
   width: max-content;
   text-align: center;
 }
+
+.more-btn {
+  border: 1px solid $color-3;
+  padding: 0.5rem 3rem;
+  color: $color-3;
+  font-weight: $font-weight-bold;
+  @include ease-out;
+
+  &:hover,
+  &:focus {
+    background: $color-3;
+    color: $color-5;
+  }
+}
+
+.send-btn {
+  max-width: 10rem;
+  background: $color-3;
+  color: $color-0;
+  text-transform: uppercase;
+  font-size: $font-size-0;
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.1rem;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}

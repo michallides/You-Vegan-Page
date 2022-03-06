@@ -18,7 +18,7 @@
   background: $color-1;
 
   .container {
-    @include container;
+    @extend %container;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +68,7 @@
   }
 
   .container {
-    @include container;
+    @extend %container;
     padding: 10rem 3rem 15rem;
     text-align: center;
   }
@@ -82,7 +82,8 @@
   }
 
   p {
-    padding-inline: 40rem;
+    max-width: 33rem;
+    margin-inline: auto;
   }
 
   .vegstory-btn {
@@ -101,7 +102,7 @@
   background: $color-5;
 
   .container {
-    @include container;
+    @extend %container;
     display: flex;
     justify-content: center;
     align-items: center;
