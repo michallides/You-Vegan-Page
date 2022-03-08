@@ -1,0 +1,54 @@
+#main-here-we-are {
+  h2 {
+    text-align: center;
+    font-size: $font-size-4;
+    margin-top: 8rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.sellers-info {
+  .container {
+    @extend %container;
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 6rem;
+  }
+}
+
+.seller-box {
+  box-shadow: 0px 0px 10px 0px lighten($text-color, 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.seller-box-img {
+  display: flex;
+  max-width: 13rem;
+}
+
+.seller-box-text {
+  text-align: center;
+
+  h3 {
+    font-size: $font-size-3;
+    color: $text-color;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    margin: 1rem 0;
+    color: $color-3;
+    font-weight: $font-weight-bold;
+  }
+}

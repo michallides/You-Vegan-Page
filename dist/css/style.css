@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
-.about-info-1 .container, .about-info-2 .container, .about-info-3 .container, .about-info-4 .container, .labels .container, .main-page-vegstory .container, .main-page-vegshop .container, .main-info .container, .product .container, .message-form .container {
+.about-info-1 .container, .about-info-2 .container, .about-info-3 .container, .about-info-4 .container, .sellers-info .container, .labels .container, .main-page-vegstory .container, .main-page-vegshop .container, .main-info .container, .product .container, .message-form .container {
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -772,12 +772,12 @@ form label textarea {
 }
 
 .about-info-2 img {
-  max-width: 17%;
+  width: 17%;
   align-self: center;
 }
 
 .about-info-2 .about-info-2-box {
-  max-width: 50%;
+  width: 50%;
 }
 
 .about-info-3 .container {
@@ -791,12 +791,12 @@ form label textarea {
 }
 
 .about-info-3 img {
-  max-width: 40%;
+  width: 40%;
   align-self: center;
 }
 
 .about-info-3 .about-info-3-box {
-  max-width: 50%;
+  width: 50%;
 }
 
 .about-info-4 .container {
@@ -820,6 +820,56 @@ form label textarea {
 
 .about-info-4 .photos .photo {
   max-width: 30rem;
+}
+
+#main-here-we-are h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 0;
+}
+
+#main-here-we-are p {
+  text-align: center;
+}
+
+.sellers-info .container {
+  padding: 5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 6rem;
+}
+
+.seller-box {
+  box-shadow: 0px 0px 10px 0px #999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.seller-box-img {
+  display: flex;
+  max-width: 13rem;
+}
+
+.seller-box-text {
+  text-align: center;
+}
+
+.seller-box-text h3 {
+  font-size: 2.2rem;
+  color: black;
+  margin: 0;
+}
+
+.seller-box-text a {
+  display: block;
+  margin: 1rem 0;
+  color: #7fb927;
+  font-weight: 600;
 }
 
 #main-home h1 {
@@ -928,7 +978,7 @@ form label textarea {
 }
 
 .main-page-vegshop-box {
-  max-width: 55%;
+  width: 55%;
 }
 
 .main-page-vegshop-box h2 a {
@@ -940,7 +990,7 @@ form label textarea {
 }
 
 .main-page-vegshop-img {
-  max-width: 40%;
+  width: 40%;
 }
 
 .vegshop-btn {
@@ -979,11 +1029,11 @@ form label textarea {
 }
 
 .product-img {
-  max-width: 55%;
+  width: 55%;
 }
 
 .product-box {
-  max-width: 30%;
+  width: 30%;
 }
 
 .message-form .container {
