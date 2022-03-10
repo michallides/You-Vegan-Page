@@ -2,7 +2,7 @@ footer {
   background: $text-color;
 
   .container {
-    @include container(110rem);
+    max-width: 110rem;
     padding: 8rem 2rem 6rem;
     display: flex;
     justify-content: space-between;

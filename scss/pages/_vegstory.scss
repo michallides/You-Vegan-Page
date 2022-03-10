@@ -1,0 +1,26 @@
+#main-vegstory {
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.vegstory-info-1 {
+  background: $color-6;
+
+  .container {
+    padding: 9rem 2rem;
+    text-align: center;
+
+    h2 {
+      max-width: 75rem;
+      margin-inline: auto;
+      margin-bottom: 2rem;
+      font-size: $font-size-5;
+    }
+
+    p {
+      max-width: 85rem;
+      margin-inline: auto;
+    }
+  }
+}
