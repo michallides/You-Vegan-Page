@@ -601,7 +601,7 @@ footer li p {
 
 .veg-news h3 {
   font-family: "Simplisicky Fill", Sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   color: #7fb927;
   margin-bottom: 1rem;
 }
@@ -726,14 +726,17 @@ form label textarea {
   background: #855829;
 }
 
+.heading .container {
+  padding: 1rem 2rem;
+}
+
 .heading h1 {
   font-size: 8.5rem;
   color: #fafafa;
-  padding: 6rem 1rem;
 }
 
 #main-about h2 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .about-info-1 .container {
@@ -743,7 +746,7 @@ form label textarea {
 
 .about-info-1 h2 {
   margin-inline: auto;
-  max-width: 60rem;
+  max-width: 75rem;
 }
 
 .about-info-1 p {
@@ -762,16 +765,16 @@ form label textarea {
   gap: 15%;
 }
 
-.about-info-2 .container .coloured-text {
+.about-info-2 .coloured-text {
   color: #7fb927;
 }
 
-.about-info-2 img {
-  width: 17%;
+.about-info-2-img-box {
+  width: 20%;
   align-self: center;
 }
 
-.about-info-2 .about-info-2-box {
+.about-info-2-box {
   width: 50%;
 }
 
@@ -785,13 +788,13 @@ form label textarea {
   color: #e88c30;
 }
 
-.about-info-3 img {
+.about-info-3 .about-info-3-img-box {
   width: 40%;
   align-self: center;
 }
 
 .about-info-3 .about-info-3-box {
-  width: 50%;
+  width: 52%;
 }
 
 .about-info-4 .container {
@@ -819,7 +822,7 @@ form label textarea {
 
 #main-here-we-are h2 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   margin-top: 8rem;
   margin-bottom: 0;
 }
@@ -861,14 +864,13 @@ form label textarea {
 }
 
 .seller-box-text a {
-  display: block;
   margin: 1rem 0;
   color: #7fb927;
   font-weight: 600;
 }
 
 #main-home h1 {
-  font-size: 7rem;
+  font-size: 8.5rem;
   text-align: center;
   background: #fafafa;
   margin: 0;
@@ -923,6 +925,7 @@ form label textarea {
   color: #fafafa;
   font-size: 2.2rem;
   font-weight: 600;
+  line-height: 1;
 }
 
 .main-page-vegstory {
@@ -956,7 +959,7 @@ form label textarea {
   margin: 3rem auto;
 }
 
-.main-page-vegstory .main-page-vegstory-img {
+.main-page-vegstory .main-page-vegstory-img-box {
   max-width: 55rem;
   margin-inline: auto;
 }
@@ -984,7 +987,7 @@ form label textarea {
   padding-right: 17rem;
 }
 
-.main-page-vegshop-img {
+.main-page-vegshop-img-box {
   width: 40%;
 }
 
@@ -998,7 +1001,7 @@ form label textarea {
 }
 
 .main-info h1 {
-  font-size: 6rem;
+  font-size: 7rem;
   color: #7fb927;
   margin-bottom: 2rem;
 }
@@ -1036,7 +1039,7 @@ form label textarea {
 }
 
 .message-form h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   max-width: 50rem;
   margin-inline: auto;
@@ -1049,7 +1052,9 @@ form label textarea {
 }
 
 #main-vegstory h2 {
+  font-size: 5rem;
   margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .vegstory-info-1 {
@@ -1057,19 +1062,97 @@ form label textarea {
 }
 
 .vegstory-info-1 .container {
-  padding: 9rem 2rem;
+  padding: 8rem 2rem;
   text-align: center;
 }
 
 .vegstory-info-1 .container h2 {
   max-width: 75rem;
   margin-inline: auto;
-  margin-bottom: 2rem;
-  font-size: 6rem;
 }
 
 .vegstory-info-1 .container p {
   max-width: 85rem;
   margin-inline: auto;
+}
+
+.vegstory-info-2 .container {
+  padding: 8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vegstory-info-2 .vegstory-info-2-box {
+  width: 45%;
+}
+
+.vegstory-info-2 .vegstory-info-2-img-box {
+  align-self: center;
+  width: 50%;
+}
+
+.vegstory-info-2 h3 {
+  font-family: "Simplisicky Fill", Sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #7fb927;
+  margin: 4rem 0 1rem;
+}
+
+.vegstory-info-2 .vegstory-info-2-list {
+  max-width: 45rem;
+}
+
+.vegstory-info-2 li {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.vegstory-info-2 i {
+  color: #7fb927;
+  display: block;
+}
+
+.vegstory-info-3 {
+  background: black;
+}
+
+.vegstory-info-3 .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 7rem 2rem;
+  color: #fafafa;
+}
+
+.vegstory-info-3 .vegstory-info-3-img-box {
+  width: 50%;
+}
+
+.vegstory-info-3 .vegstory-info-3-box {
+  width: 45%;
+  align-self: center;
+}
+
+.vegstory-info-4 {
+  background: #855829;
+}
+
+.vegstory-info-4 .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 2rem;
+  color: #fafafa;
+}
+
+.vegstory-info-4 .vegstory-info-4-img-box {
+  width: 50%;
+}
+
+.vegstory-info-4 .vegstory-info-4-box {
+  width: 45%;
+  align-self: center;
 }
 /*# sourceMappingURL=style.css.map */

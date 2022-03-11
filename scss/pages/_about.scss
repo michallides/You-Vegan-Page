@@ -1,9 +1,10 @@
 #main-about {
   h2 {
-    font-size: $font-size-4;
+    font-size: $font-size-5;
   }
 }
 
+// section about-info-1
 .about-info-1 {
   .container {
     padding: 8rem 2rem 3rem;
@@ -12,7 +13,7 @@
 
   h2 {
     margin-inline: auto;
-    max-width: 60rem;
+    max-width: 75rem;
   }
 
   p {
@@ -25,28 +26,30 @@
   }
 }
 
+// section about-info-2
 .about-info-2 {
   .container {
     padding: 3rem 2rem;
     display: flex;
     justify-content: center;
     gap: 15%;
-
-    .coloured-text {
-      color: $color-3;
-    }
   }
 
-  img {
-    width: 17%;
-    align-self: center;
-  }
-
-  .about-info-2-box {
-    width: 50%;
+  .coloured-text {
+    color: $color-3;
   }
 }
 
+.about-info-2-img-box {
+  width: 20%;
+  align-self: center;
+}
+
+.about-info-2-box {
+  width: 50%;
+}
+
+// section about-info-3
 .about-info-3 {
   .container {
     padding: 3rem 2rem;
@@ -58,16 +61,17 @@
     color: $color-2;
   }
 
-  img {
+  .about-info-3-img-box {
     width: 40%;
     align-self: center;
   }
 
   .about-info-3-box {
-    width: 50%;
+    width: 52%;
   }
 }
 
+// section about-info-4
 .about-info-4 {
   .container {
     padding: 8rem 2rem;

@@ -1,7 +1,7 @@
 #main-here-we-are {
   h2 {
     text-align: center;
-    font-size: $font-size-4;
+    font-size: $font-size-5;
     margin-top: 8rem;
     margin-bottom: 0;
   }
@@ -11,6 +11,7 @@
   }
 }
 
+// section sellers-info
 .sellers-info {
   .container {
     padding: 5rem 2rem;
@@ -45,7 +46,6 @@
   }
 
   a {
-    display: block;
     margin: 1rem 0;
     color: $color-3;
     font-weight: $font-weight-bold;

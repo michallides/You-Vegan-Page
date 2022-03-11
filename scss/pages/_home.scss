@@ -1,6 +1,6 @@
 #main-home {
   h1 {
-    font-size: $font-size-6;
+    font-size: $font-size-8;
     text-align: center;
     background: $color-4;
     margin: 0;
@@ -56,9 +56,11 @@
     color: $color-4;
     font-size: $font-size-3;
     font-weight: $font-weight-bold;
+    line-height: 1;
   }
 }
 
+// section main-page-vegstory
 .main-page-vegstory {
   background: $color-4;
 
@@ -89,7 +91,7 @@
     margin: 3rem auto;
   }
 
-  .main-page-vegstory-img {
+  .main-page-vegstory-img-box {
     max-width: 55rem;
     margin-inline: auto;
   }
@@ -119,7 +121,7 @@
   }
 }
 
-.main-page-vegshop-img {
+.main-page-vegshop-img-box {
   width: 40%;
 }
 
