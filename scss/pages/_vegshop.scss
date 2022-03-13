@@ -1,0 +1,43 @@
+// main info
+.vegshop-main-info {
+  padding: 5rem 2rem;
+
+  h2 {
+    font-size: $font-size-5;
+    max-width: 85rem;
+    text-align: center;
+    margin-inline: auto;
+  }
+}
+
+// forms
+.forms-section {
+  display: flex;
+  padding: 2rem 2rem 8rem;
+
+  h3 {
+    font-size: $font-size-4;
+    font-family: $secondary-font-family;
+    font-weight: $font-weight-light;
+    line-height: 1;
+
+    &:first-child {
+      font-size: $font-size-5;
+      text-align: center;
+    }
+  }
+
+  form {
+    margin-block: 4rem;
+  }
+}
+
+.event,
+.partners {
+  padding-inline: 5rem;
+  width: 50%;
+}
+
+.partners {
+  background: lighten($color-3, 50%);
+}

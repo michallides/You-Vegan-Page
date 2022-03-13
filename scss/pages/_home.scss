@@ -13,7 +13,7 @@
   }
 }
 
-// section labels
+// labels
 .labels {
   background: $color-1;
 
@@ -60,7 +60,7 @@
   }
 }
 
-// section main-page-vegstory
+// main-page-vegstory
 .main-page-vegstory {
   background: $color-4;
 
@@ -74,7 +74,7 @@
   }
 
   h2 {
-    margin: 2rem 0;
+    margin-block: 2rem;
 
     a {
       color: $text-color;
@@ -97,7 +97,7 @@
   }
 }
 
-// section main-page-vegshop
+// main-page-vegshop
 .main-page-vegshop {
   background: $color-5;
 

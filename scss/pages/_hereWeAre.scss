@@ -1,4 +1,5 @@
-#main-here-we-are {
+// main info
+.here-we-are-main-info {
   h2 {
     text-align: center;
     font-size: $font-size-5;
@@ -11,7 +12,7 @@
   }
 }
 
-// section sellers-info
+// sellers-info
 .sellers-info {
   .container {
     padding: 5rem 2rem;
@@ -28,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
+  padding-block: 5rem;
 }
 
 .seller-box-img {
@@ -46,7 +47,8 @@
   }
 
   a {
-    margin: 1rem 0;
+    display: block;
+    margin-block: 1rem;
     color: $color-3;
     font-weight: $font-weight-bold;
   }

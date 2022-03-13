@@ -1,0 +1,138 @@
+// grid box
+.grid-box {
+  padding: 8rem 2rem;
+  display: grid;
+  grid-template-areas:
+    'contact-info contact-us'
+    'direct-contact-info facturation-info';
+
+  .contact-info {
+    grid-area: contact-info;
+  }
+
+  .contact-us {
+    grid-area: contact-us;
+  }
+
+  .contact-info,
+  .contact-us {
+    .container {
+      margin-bottom: 5rem;
+    }
+  }
+
+  .direct-contact-info {
+    grid-area: direct-contact-info;
+  }
+
+  .facturation-info {
+    grid-area: facturation-info;
+  }
+
+  h2 {
+    font-size: $font-size-5;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: $font-size-2;
+    color: $color-3;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+// contact-info
+.contact-info-email,
+.contact-info-phone {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  font-size: $font-size-3;
+}
+
+.contact-info-socials {
+  display: flex;
+  gap: 4rem;
+
+  a {
+    font-size: $font-size-3;
+    color: $text-color;
+
+    &:hover,
+    &:focus {
+      color: $color-3;
+    }
+  }
+}
+
+// direct-contact-info
+.production-sale,
+.media-marketing {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h3 {
+    width: 100%;
+    font-size: $font-size-2;
+    margin-bottom: 2rem;
+  }
+
+  h4,
+  p {
+    margin: 0;
+  }
+}
+
+.production-sale h3 {
+  color: $color-3;
+}
+
+.media-marketing h3 {
+  color: $color-2;
+}
+
+// facturation-info
+.facturation-info {
+  .container div {
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 1.4;
+
+    &.bold {
+      font-weight: $font-weight-bold;
+      font-size: $font-size-2;
+    }
+  }
+}
+
+// maps
+.maps {
+  background: $text-color;
+  color: $color-6;
+
+  .contact-icon {
+    font-size: $font-size-5;
+    width: 4.4rem;
+
+    svg {
+      fill: $color-6;
+    }
+  }
+}
