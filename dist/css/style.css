@@ -507,20 +507,6 @@ p {
   margin: 7rem auto;
 }
 
-.mapouter {
-  position: relative;
-  text-align: right;
-  height: 300px;
-  width: 540px;
-}
-
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 300px;
-  width: 540px;
-}
-
 footer {
   background: black;
 }
@@ -820,6 +806,11 @@ form label textarea {
   max-width: 30rem;
 }
 
+#main-contact h4,
+#main-contact p {
+  margin: 0;
+}
+
 .grid-box {
   padding: 8rem 2rem;
   display: grid;
@@ -855,10 +846,6 @@ form label textarea {
 .grid-box h3 {
   font-size: 1.6rem;
   color: #7fb927;
-  margin: 0;
-}
-
-.grid-box p {
   margin: 0;
 }
 
@@ -904,13 +891,6 @@ form label textarea {
   margin-bottom: 2rem;
 }
 
-.production-sale h4,
-.production-sale p,
-.media-marketing h4,
-.media-marketing p {
-  margin: 0;
-}
-
 .production-sale h3 {
   color: #7fb927;
 }
@@ -941,6 +921,12 @@ form label textarea {
   color: #fef7f1;
 }
 
+.maps .container {
+  display: flex;
+  gap: 3rem;
+  padding: 5rem 2rem;
+}
+
 .maps .contact-icon {
   font-size: 5rem;
   width: 4.4rem;
@@ -948,6 +934,29 @@ form label textarea {
 
 .maps .contact-icon svg {
   fill: #fef7f1;
+}
+
+.residence-info,
+.factory-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 5.8rem;
+  margin-bottom: 2rem;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 30rem;
+  max-width: 54rem;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 30rem;
+  max-width: 54rem;
 }
 
 .here-we-are-main-info h2 {
