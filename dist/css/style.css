@@ -927,6 +927,11 @@ form label textarea {
   padding: 5rem 2rem;
 }
 
+.maps .residence-box,
+.maps .factory-box {
+  flex-basis: 54rem;
+}
+
 .maps .contact-icon {
   font-size: 5rem;
   width: 4.4rem;
@@ -936,8 +941,8 @@ form label textarea {
   fill: #fef7f1;
 }
 
-.residence-info,
-.factory-info {
+.maps .residence-info,
+.maps .factory-info {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -945,18 +950,9 @@ form label textarea {
   margin-bottom: 2rem;
 }
 
-.mapouter {
-  position: relative;
-  text-align: right;
-  height: 30rem;
-  max-width: 54rem;
-}
-
-.gmap_canvas {
+.maps .gmap_canvas {
   overflow: hidden;
-  background: none !important;
   height: 30rem;
-  max-width: 54rem;
 }
 
 .here-we-are-main-info h2 {
@@ -1336,5 +1332,71 @@ form label textarea {
 .vegstory-info-4 .vegstory-info-4-box {
   width: 45%;
   align-self: center;
+}
+
+.product-header .container {
+  padding: 3rem 2rem;
+}
+
+.product-header .container h1 {
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 7rem;
+}
+
+.product-header .container img {
+  margin-inline: auto;
+}
+
+.product-info-1 .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 2rem;
+}
+
+.product-info-1 .info-text {
+  width: 42%;
+}
+
+.product-info-1 .info-img-box {
+  width: 50%;
+}
+
+.product-info-1 h2 {
+  font-size: 4rem;
+}
+
+.product-info-2 .container {
+  display: flex;
+  padding: 6rem 2rem;
+}
+
+.product-info-2 .info-text {
+  width: 50%;
+  display: flex;
+  gap: 5rem;
+  background: #fcf0e3;
+  font-family: "Simplisicky Fill", Sans-serif;
+}
+
+.product-info-2 .info-img-box {
+  width: 50%;
+}
+
+.product-info-2 h2,
+.product-info-2 p {
+  font-size: 4rem;
+}
+
+.product-info-2 p:nth-last-of-type(1) {
+  color: #e88c30;
+}
+
+.product-info-2 p:nth-last-of-type(2) {
+  color: #7fb927;
+}
+
+.product-info-2 li {
+  font-size: 2.2rem;
 }
 /*# sourceMappingURL=style.css.map */

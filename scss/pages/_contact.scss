@@ -131,6 +131,11 @@
     padding: 5rem 2rem;
   }
 
+  .residence-box,
+  .factory-box {
+    flex-basis: 54rem;
+  }
+
   .contact-icon {
     font-size: $font-size-5;
     width: 4.4rem;
@@ -139,27 +144,18 @@
       fill: $color-6;
     }
   }
-}
 
-.residence-info,
-.factory-info {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  height: 5.8rem;
-  margin-bottom: 2rem;
-}
+  .residence-info,
+  .factory-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 5.8rem;
+    margin-bottom: 2rem;
+  }
 
-.mapouter {
-  position: relative;
-  text-align: right;
-  height: 30rem;
-  max-width: 54rem;
-}
-
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 30rem;
-  max-width: 54rem;
+  .gmap_canvas {
+    overflow: hidden;
+    height: 30rem;
+  }
 }
