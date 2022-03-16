@@ -1291,7 +1291,6 @@ form label textarea {
 
 .vegstory-info-2 i {
   color: #7fb927;
-  display: block;
 }
 
 .vegstory-info-3 {
@@ -1351,6 +1350,7 @@ form label textarea {
 .product-info-1 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 6rem 2rem;
 }
 
@@ -1364,39 +1364,161 @@ form label textarea {
 
 .product-info-1 h2 {
   font-size: 4rem;
+  margin-top: 0;
 }
 
 .product-info-2 .container {
   display: flex;
-  padding: 6rem 2rem;
-}
-
-.product-info-2 .info-text {
-  width: 50%;
-  display: flex;
-  gap: 5rem;
-  background: #fcf0e3;
-  font-family: "Simplisicky Fill", Sans-serif;
+  justify-content: space-between;
+  padding: 4rem 2rem;
 }
 
 .product-info-2 .info-img-box {
   width: 50%;
 }
 
-.product-info-2 h2,
-.product-info-2 p {
+.product-info-2 .info-text {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fcf0e3;
+  font-family: "Simplisicky Fill", Sans-serif;
+}
+
+.product-info-2 h2 {
   font-size: 4rem;
 }
 
-.product-info-2 p:nth-last-of-type(1) {
-  color: #e88c30;
+.product-info-2 p {
+  font-size: 2.6rem;
 }
 
-.product-info-2 p:nth-last-of-type(2) {
+.product-info-2 p:nth-last-of-type(1) {
   color: #7fb927;
 }
 
+.product-info-2 p:nth-last-of-type(2) {
+  color: #e88c30;
+}
+
 .product-info-2 li {
-  font-size: 2.2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 2.6rem;
+  margin-block: 1rem;
+}
+
+.product-info-2 li i {
+  font-size: 1.4rem;
+}
+
+.product-info-2 .info-text-composition,
+.product-info-2 .info-text-weight {
+  width: 43%;
+  padding-left: 5rem;
+}
+
+.product-info-2 .info-text-composition h2,
+.product-info-2 .info-text-composition p,
+.product-info-2 .info-text-weight h2,
+.product-info-2 .info-text-weight p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.product-info-2 .info-text-composition h2:first-of-type,
+.product-info-2 .info-text-composition p:first-of-type,
+.product-info-2 .info-text-weight h2:first-of-type,
+.product-info-2 .info-text-weight p:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.product-info-2 .info-text-weight {
+  width: 60%;
+}
+
+.product-info-2 .info-text-weight p {
+  font-size: 4rem;
+}
+
+.nutritional-data .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.nutritional-data .nutritional-data-table {
+  width: 38%;
+  border: 1px solid black;
+  padding-block: 4rem;
+  font-family: "Simplisicky Fill", Sans-serif;
+}
+
+.nutritional-data .nutritional-data-table th {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: left;
+  padding: 2rem;
+}
+
+.nutritional-data .nutritional-data-table td {
+  font-size: 2.6rem;
+  padding: 1rem 3rem;
+}
+
+.nutritional-data .nutritional-data-table td:nth-child(2) {
+  color: #7fb927;
+  text-align: right;
+}
+
+.nutritional-data .composition-alergens {
+  width: 60%;
+  text-align: justify;
+  padding-right: 3rem;
+}
+
+.nutritional-data .composition-alergens h2 {
+  font-size: 4rem;
+}
+
+.gallery .container {
+  padding: 6rem 2rem;
+}
+
+.gallery h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.gallery .gallery-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 25rem;
+  gap: 4rem;
+  padding-inline: 4rem;
+}
+
+.gallery .gallery-images img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.contact .container {
+  padding: 8rem 2rem;
+}
+
+.contact h2 {
+  max-width: 70rem;
+  font-size: 4rem;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.contact p {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
