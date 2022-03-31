@@ -426,6 +426,13 @@ p {
   text-align: center;
 }
 
+@media screen and (max-width: 57.5em) {
+  .btn {
+    font-size: 1.6rem;
+    padding: 1rem 4rem;
+  }
+}
+
 .more-btn {
   border: 1px solid #7fb927;
   padding: 0.5rem 3rem;
@@ -483,7 +490,14 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  white-space: nowrap;
   transition: 0.2s all ease-in-out;
+}
+
+@media screen and (max-width: 57.5em) {
+  .carousel-img-box:before {
+    font-size: 2.6rem;
+  }
 }
 
 .carousel-img-box:after {
@@ -675,17 +689,26 @@ form label textarea {
 
 .logo {
   width: 24rem;
-  min-width: 24rem;
+  min-width: 14rem;
+  margin-right: 3rem;
 }
 
 .menu-list {
   display: flex;
+  width: max-content;
   gap: 2rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .menu-list {
+    font-size: 1.3rem;
+    gap: 1rem;
+  }
 }
 
 .menu-list a {
   color: #e88c30;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .menu-list a:active, .menu-list a:hover {
@@ -1014,6 +1037,12 @@ form label textarea {
   padding-bottom: 5rem;
 }
 
+@media screen and (max-width: 57.5em) {
+  #main-home h1 {
+    font-size: 6rem;
+  }
+}
+
 #main-home h1 a {
   color: #7fb927;
 }
@@ -1037,8 +1066,20 @@ form label textarea {
   color: #fafafa;
 }
 
+@media screen and (max-width: 57.5em) {
+  .labels-heading h2 {
+    font-size: 5rem;
+  }
+}
+
 .v-label-box {
   flex-basis: 15rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .v-label-box {
+    flex-basis: 10rem;
+  }
 }
 
 .secondary-labels {
@@ -1064,6 +1105,13 @@ form label textarea {
   line-height: 1;
 }
 
+@media screen and (max-width: 57.5em) {
+  .label p {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+}
+
 .main-page-vegstory {
   background: #fafafa;
 }
@@ -1077,8 +1125,20 @@ form label textarea {
   text-align: center;
 }
 
+@media screen and (max-width: 57.5em) {
+  .main-page-vegstory .container {
+    padding-block: 5rem 12rem;
+  }
+}
+
 .main-page-vegstory h2 {
   margin-block: 2rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .main-page-vegstory h2 {
+    font-size: 5rem;
+  }
 }
 
 .main-page-vegstory h2 a {
@@ -1100,6 +1160,12 @@ form label textarea {
   margin-inline: auto;
 }
 
+@media screen and (max-width: 57.5em) {
+  .main-page-vegstory .main-page-vegstory-img-box {
+    max-width: 45rem;
+  }
+}
+
 .main-page-vegshop {
   background: #f6faef;
 }
@@ -1111,12 +1177,24 @@ form label textarea {
   padding: 15rem 0 20rem;
 }
 
+@media screen and (max-width: 57.5em) {
+  .main-page-vegshop .container {
+    padding-block: 5rem 12rem;
+  }
+}
+
 .main-page-vegshop-box {
   width: 55%;
 }
 
 .main-page-vegshop-box h2 a {
   color: black;
+}
+
+@media screen and (max-width: 57.5em) {
+  .main-page-vegshop-box h2 a {
+    font-size: 5rem;
+  }
 }
 
 .main-page-vegshop-box p {

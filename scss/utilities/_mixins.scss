@@ -6,3 +6,10 @@
 @mixin ease-out {
   transition: 0.2s all ease-in-out;
 }
+
+// Responsive
+@mixin responsive($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

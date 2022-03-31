@@ -28,7 +28,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    white-space: nowrap;
     @include ease-out;
+
+    @include responsive(em(920)) {
+      font-size: $font-size-3-4;
+    }
   }
 
   &:after {

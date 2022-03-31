@@ -18,16 +18,23 @@
 
 .logo {
   width: 24rem;
-  min-width: 24rem;
+  min-width: 14rem;
+  margin-right: 3rem;
 }
 
 .menu-list {
   display: flex;
+  width: max-content;
   gap: 2rem;
+
+  @include responsive(em(920)) {
+    font-size: $font-size-0;
+    gap: 1rem;
+  }
 
   a {
     color: $color-2;
-    padding: 1rem;
+    padding: 0.5rem;
 
     &:active,
     &:hover {
