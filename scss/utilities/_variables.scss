@@ -29,9 +29,3 @@ $font-size-5: 5rem;
 $font-size-6: 6rem;
 $font-size-7: 7rem;
 $font-size-8: 8.5rem;
-
-// Responsive
-
-@function em($value-px, $base: 16) {
-  @return ($value-px / $base) * 1em;
-}

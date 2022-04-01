@@ -2,7 +2,12 @@
   background: $color-4;
 
   .container {
-    padding: 0 7rem 2rem;
+    padding-block: 0 2rem;
+    padding-inline: 7rem;
+
+    @include responsive(em(600)) {
+      padding-inline: 2rem;
+    }
   }
 }
 
@@ -15,6 +20,12 @@
 
 .carousel-img-box {
   position: relative;
+
+  @include responsive(em(780)) {
+    &:not(:first-of-type) {
+      display: none;
+    }
+  }
 
   &:before {
     content: attr(data-content);
@@ -59,4 +70,8 @@
 
 .carousel-btn {
   margin: 7rem auto;
+
+  @include responsive(em(600)) {
+    margin-block: 5rem;
+  }
 }

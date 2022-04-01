@@ -5,7 +5,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  min-width: 20em;
+  font-size: 1.6rem;
   margin: 0;
 }
 
@@ -27,10 +30,22 @@ ol {
 }
 
 input,
-textarea {
+textarea,
+input:hover,
+textarea:hover,
+input:active,
+textarea:active,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type='submit'],
+input[type='submit']:hover,
+input[type='submit']:active {
+  border: none;
   outline: none;
   box-shadow: none;
-  border: none;
 }
 
 .container {
@@ -464,7 +479,14 @@ p {
 }
 
 .carousel .container {
-  padding: 0 7rem 2rem;
+  padding-block: 0 2rem;
+  padding-inline: 7rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .carousel .container {
+    padding-inline: 2rem;
+  }
 }
 
 .carousel-images {
@@ -476,6 +498,12 @@ p {
 
 .carousel-img-box {
   position: relative;
+}
+
+@media screen and (max-width: 48.75em) {
+  .carousel-img-box:not(:first-of-type) {
+    display: none;
+  }
 }
 
 .carousel-img-box:before {
@@ -521,6 +549,12 @@ p {
   margin: 7rem auto;
 }
 
+@media screen and (max-width: 37.5em) {
+  .carousel-btn {
+    margin-block: 5rem;
+  }
+}
+
 footer {
   background: black;
 }
@@ -529,10 +563,19 @@ footer .container {
   max-width: 110rem;
   padding: 8rem 2rem 6rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   color: #fafafa;
   font-size: 1.3rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 37.5em) {
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+  }
 }
 
 footer .container a {
@@ -540,7 +583,14 @@ footer .container a {
 }
 
 footer section {
-  width: max-content;
+  flex-basis: max-content;
+}
+
+@media screen and (max-width: 37.5em) {
+  footer section {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
 }
 
 footer .logo {
@@ -555,6 +605,7 @@ footer h3 {
 footer h3,
 footer .logo {
   margin-top: 0;
+  margin-right: 0;
   margin-bottom: 4rem;
 }
 
@@ -562,6 +613,12 @@ footer li {
   display: flex;
   gap: 2.5rem;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  footer li {
+    justify-content: center;
+  }
 }
 
 footer li i {
@@ -589,29 +646,56 @@ footer li p {
 .products h3 a {
   text-transform: uppercase;
   color: #e88c30;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .you-vegan h3,
+  .products h3 a {
+    font-size: 1.3rem;
+  }
 }
 
 .you-vegan-list a:hover, .you-vegan-list a:focus {
   color: #7fb927;
 }
 
-.veg-news {
-  max-width: 30rem;
+section.veg-news {
+  flex-basis: 30rem;
 }
 
-.veg-news h3 {
+@media screen and (max-width: 57.5em) {
+  section.veg-news {
+    flex-basis: 100%;
+    margin-top: 5rem;
+  }
+}
+
+section.veg-news h3 {
   font-family: "Simplisicky Fill", Sans-serif;
   font-size: 5rem;
   color: #7fb927;
   margin-bottom: 1rem;
 }
 
-.veg-news p {
+@media screen and (max-width: 57.5em) {
+  section.veg-news h3 {
+    font-size: 2.6rem;
+  }
+}
+
+section.veg-news p {
   line-height: 1.6;
 }
 
-.veg-news input,
-.veg-news .veg-news-btn {
+@media screen and (max-width: 57.5em) {
+  section.veg-news p {
+    font-size: 1.3rem;
+  }
+}
+
+section.veg-news input,
+section.veg-news .veg-news-btn {
   font-size: 1.4rem;
   border-radius: 3rem;
   width: 100%;
@@ -619,13 +703,16 @@ footer li p {
   padding: 1rem;
 }
 
-.veg-news input {
+section.veg-news input {
   background: #1a1a1a;
   color: #fafafa;
   margin-top: 1rem;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
-.veg-news .veg-news-btn {
+section.veg-news .veg-news-btn {
   letter-spacing: 0.2rem;
 }
 
@@ -637,11 +724,16 @@ footer li p {
   padding-block: 2rem;
 }
 
+@media screen and (max-width: 57.5em) {
+  .copyright {
+    font-size: 1.3rem;
+  }
+}
+
 form {
   display: flex;
   flex-direction: column;
   max-width: 60rem;
-  margin-inline: auto;
 }
 
 form label {
@@ -687,22 +779,38 @@ form label textarea {
   align-items: center;
 }
 
+@media screen and (max-width: 57.5em) {
+  .site-header .container {
+    padding-inline: 2rem;
+  }
+}
+
 .logo {
   width: 24rem;
-  min-width: 14rem;
   margin-right: 3rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .logo {
+    width: 17rem;
+  }
 }
 
 .menu-list {
   display: flex;
   width: max-content;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 @media screen and (max-width: 57.5em) {
   .menu-list {
     font-size: 1.3rem;
-    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 48.75em) {
+  .menu-list {
+    display: none;
   }
 }
 
@@ -715,8 +823,29 @@ form label textarea {
   color: #8a4d0f;
 }
 
+.hamburger-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 48.75em) {
+  .hamburger-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger-menu-icon .hamburger-line {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #e88c30;
+    margin-bottom: 3px;
+  }
+  .hamburger-menu-icon .hamburger-line:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .header-socials-list {
-  margin-left: 5rem;
+  margin-left: 3rem;
   display: flex;
   gap: 2rem;
 }
@@ -744,13 +873,44 @@ form label textarea {
   color: #fafafa;
 }
 
+@media screen and (max-width: 57.5em) {
+  .heading h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .heading h1 {
+    font-size: 5rem;
+    margin-block: 2rem;
+  }
+}
+
 #main-about h2 {
   font-size: 5rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  #main-about h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  #main-about h2 {
+    line-height: 1.2;
+  }
 }
 
 .about-info-1 .container {
   padding: 8rem 2rem 3rem;
   text-align: center;
+}
+
+@media screen and (max-width: 37.5em) {
+  .about-info-1 .container {
+    padding-top: 4rem;
+  }
 }
 
 .about-info-1 h2 {
@@ -770,6 +930,7 @@ form label textarea {
 .about-info-2 .container {
   padding: 3rem 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 15%;
 }
@@ -779,18 +940,39 @@ form label textarea {
 }
 
 .about-info-2-img-box {
-  width: 20%;
+  flex-basis: 20%;
   align-self: center;
 }
 
+@media screen and (max-width: 37.5em) {
+  .about-info-2-img-box {
+    flex-basis: 40%;
+  }
+}
+
 .about-info-2-box {
-  width: 50%;
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .about-info-2-box {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 
 .about-info-3 .container {
   padding: 3rem 2rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 5%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .about-info-3 .container {
+    flex-basis: 40%;
+  }
 }
 
 .about-info-3 .coloured-text {
@@ -798,12 +980,26 @@ form label textarea {
 }
 
 .about-info-3 .about-info-3-img-box {
-  width: 40%;
+  flex-basis: 40%;
   align-self: center;
 }
 
+@media screen and (max-width: 37.5em) {
+  .about-info-3 .about-info-3-img-box {
+    flex-basis: 70%;
+    margin-top: 3rem;
+  }
+}
+
 .about-info-3 .about-info-3-box {
-  width: 52%;
+  flex-basis: 52%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .about-info-3 .about-info-3-box {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 
 .about-info-4 .container {
@@ -825,11 +1021,38 @@ form label textarea {
   gap: 8rem;
 }
 
+@media screen and (max-width: 37.5em) {
+  .about-info-4 .photos {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .about-info-4 .photos .photo {
   max-width: 30rem;
 }
 
-#main-contact h4,
+#main-contact h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  #main-contact h2 {
+    font-size: 4rem;
+  }
+}
+
+#main-contact h3 {
+  font-size: 1.6rem;
+  color: #7fb927;
+}
+
+#main-contact h4 {
+  margin: 0;
+}
+
 #main-contact p {
   margin: 0;
 }
@@ -840,12 +1063,35 @@ form label textarea {
   grid-template-areas: 'contact-info contact-us' 'direct-contact-info facturation-info';
 }
 
+@media screen and (max-width: 48.75em) {
+  .grid-box {
+    grid-template-areas: 'contact-info' 'contact-us' 'direct-contact-info' 'facturation-info';
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .grid-box {
+    padding-top: 4rem;
+  }
+}
+
 .grid-box .contact-info {
   grid-area: contact-info;
 }
 
+.grid-box .contact-info h3 {
+  margin: 0;
+}
+
 .grid-box .contact-us {
   grid-area: contact-us;
+}
+
+@media screen and (max-width: 48.75em) {
+  .grid-box .contact-us form {
+    margin-inline: auto;
+  }
 }
 
 .grid-box .contact-info .container,
@@ -861,23 +1107,19 @@ form label textarea {
   grid-area: facturation-info;
 }
 
-.grid-box h2 {
-  font-size: 5rem;
-  margin-bottom: 2rem;
-}
-
-.grid-box h3 {
-  font-size: 1.6rem;
-  color: #7fb927;
-  margin: 0;
-}
-
 .contact-info-email,
 .contact-info-phone {
   display: flex;
   align-items: center;
   gap: 3rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 48.75em) {
+  .contact-info-email,
+  .contact-info-phone {
+    justify-content: center;
+  }
 }
 
 .contact-icon {
@@ -887,6 +1129,12 @@ form label textarea {
 .contact-info-socials {
   display: flex;
   gap: 4rem;
+}
+
+@media screen and (max-width: 48.75em) {
+  .contact-info-socials {
+    justify-content: center;
+  }
 }
 
 .contact-info-socials a {
@@ -907,11 +1155,17 @@ form label textarea {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 48.75em) {
+  .production-sale,
+  .media-marketing {
+    justify-content: center;
+  }
+}
+
 .production-sale h3,
 .media-marketing h3 {
   width: 100%;
   font-size: 1.6rem;
-  margin-bottom: 2rem;
 }
 
 .production-sale h3 {
@@ -923,10 +1177,6 @@ form label textarea {
 }
 
 .facturation-info .container div {
-  margin-bottom: 2rem;
-}
-
-.facturation-info h3 {
   margin-bottom: 2rem;
 }
 
@@ -946,13 +1196,33 @@ form label textarea {
 
 .maps .container {
   display: flex;
-  gap: 3rem;
+  flex-wrap: wrap;
   padding: 5rem 2rem;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 48.75em) {
+  .maps .container {
+    justify-content: center;
+  }
 }
 
 .maps .residence-box,
 .maps .factory-box {
-  flex-basis: 54rem;
+  flex-basis: 48%;
+}
+
+@media screen and (max-width: 48.75em) {
+  .maps .residence-box,
+  .maps .factory-box {
+    flex-basis: 80%;
+  }
+}
+
+@media screen and (max-width: 48.75em) {
+  .maps .residence-box {
+    margin-bottom: 5rem;
+  }
 }
 
 .maps .contact-icon {
@@ -978,11 +1248,21 @@ form label textarea {
   height: 30rem;
 }
 
+.here-we-are-main-info .container {
+  padding-inline: 2rem;
+}
+
 .here-we-are-main-info h2 {
   text-align: center;
   font-size: 5rem;
   margin-top: 8rem;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 57.5em) {
+  .here-we-are-main-info h2 {
+    font-size: 4rem;
+  }
 }
 
 .here-we-are-main-info p {
@@ -995,6 +1275,20 @@ form label textarea {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
   row-gap: 6rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .sellers-info .container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .sellers-info .container {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
 }
 
 .seller-box {
@@ -1033,8 +1327,8 @@ form label textarea {
   text-align: center;
   background: #fafafa;
   margin: 0;
-  padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding-block: 8rem 5rem;
+  padding-inline: 2rem;
 }
 
 @media screen and (max-width: 57.5em) {
@@ -1043,8 +1337,21 @@ form label textarea {
   }
 }
 
+@media screen and (max-width: 37.5em) {
+  #main-home h1 {
+    font-size: 5rem;
+    padding-block: 5rem 3rem;
+  }
+}
+
 #main-home h1 a {
   color: #7fb927;
+}
+
+@media screen and (max-width: 57.5em) {
+  #main-home h2 {
+    font-size: 4rem;
+  }
 }
 
 .labels {
@@ -1056,20 +1363,36 @@ form label textarea {
   align-items: center;
   justify-content: space-between;
   padding: 10rem 2rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 48.75em) {
+  .labels .container {
+    justify-content: space-around;
+    padding-block: 5rem 7rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .labels .container {
+    padding-top: 3rem;
+  }
 }
 
 .labels-heading {
   flex-basis: max-content;
 }
 
-.labels-heading h2 {
-  color: #fafafa;
+@media screen and (max-width: 48.75em) {
+  .labels-heading {
+    flex-basis: 100%;
+  }
 }
 
-@media screen and (max-width: 57.5em) {
-  .labels-heading h2 {
-    font-size: 5rem;
-  }
+.labels-heading h2 {
+  color: #fafafa;
+  text-align: center;
 }
 
 .v-label-box {
@@ -1131,14 +1454,14 @@ form label textarea {
   }
 }
 
-.main-page-vegstory h2 {
-  margin-block: 2rem;
+@media screen and (max-width: 37.5em) {
+  .main-page-vegstory .container {
+    padding-block: 3rem 8rem;
+  }
 }
 
-@media screen and (max-width: 57.5em) {
-  .main-page-vegstory h2 {
-    font-size: 5rem;
-  }
+.main-page-vegstory h2 {
+  margin-block: 2rem;
 }
 
 .main-page-vegstory h2 a {
@@ -1172,9 +1495,11 @@ form label textarea {
 
 .main-page-vegshop .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15rem 0 20rem;
+  padding-inline: 0;
+  padding-block: 15rem 20rem;
 }
 
 @media screen and (max-width: 57.5em) {
@@ -1183,8 +1508,29 @@ form label textarea {
   }
 }
 
+@media screen and (max-width: 37.5em) {
+  .main-page-vegshop .container {
+    padding-inline: 2rem;
+    padding-block: 3rem 8rem;
+  }
+}
+
 .main-page-vegshop-box {
-  width: 55%;
+  flex-basis: 55%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .main-page-vegshop-box {
+    flex-basis: 100%;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 57.5em) {
+  .main-page-vegshop-box h2 {
+    line-height: 0;
+  }
 }
 
 .main-page-vegshop-box h2 a {
@@ -1193,7 +1539,7 @@ form label textarea {
 
 @media screen and (max-width: 57.5em) {
   .main-page-vegshop-box h2 a {
-    font-size: 5rem;
+    line-height: 1.1;
   }
 }
 
@@ -1201,12 +1547,36 @@ form label textarea {
   padding-right: 17rem;
 }
 
+@media screen and (max-width: 37.5em) {
+  .main-page-vegshop-box p {
+    padding: 0;
+  }
+}
+
 .main-page-vegshop-img-box {
-  width: 40%;
+  flex-basis: 40%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .main-page-vegshop-img-box {
+    flex-basis: 80%;
+  }
 }
 
 .vegshop-btn {
   margin-top: 6rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .vegshop-btn {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 57.5em) {
+  #main-products h2 {
+    font-size: 4rem;
+  }
 }
 
 .products-main-info .container {
@@ -1214,10 +1584,28 @@ form label textarea {
   padding: 5rem 2rem;
 }
 
+@media screen and (max-width: 37.5em) {
+  .products-main-info .container {
+    padding-block: 0;
+  }
+}
+
 .products-main-info h1 {
   font-size: 7rem;
   color: #7fb927;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .products-main-info h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .products-main-info h1 {
+    font-size: 5rem;
+  }
 }
 
 .products-main-info p {
@@ -1227,9 +1615,24 @@ form label textarea {
 
 .product .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 9%;
+}
+
+@media screen and (max-width: 57.5em) {
+  .product .container {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .product .container {
+    padding-bottom: 7rem;
+    padding-inline: 2rem;
+    text-align: center;
+  }
 }
 
 .product h2 {
@@ -1241,11 +1644,23 @@ form label textarea {
 }
 
 .product-img {
-  width: 55%;
+  flex-basis: 55%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .product-img {
+    flex-basis: 90%;
+  }
 }
 
 .product-box {
-  width: 30%;
+  flex-basis: 30%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .product-box {
+    flex-basis: 100%;
+  }
 }
 
 .message-form .container {
@@ -1265,8 +1680,18 @@ form label textarea {
   margin-bottom: 3rem;
 }
 
+.message-form form {
+  margin-inline: auto;
+}
+
 .vegshop-main-info {
   padding: 5rem 2rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .vegshop-main-info {
+    padding-bottom: 0;
+  }
 }
 
 .vegshop-main-info h2 {
@@ -1276,9 +1701,23 @@ form label textarea {
   margin-inline: auto;
 }
 
+@media screen and (max-width: 57.5em) {
+  .vegshop-main-info h2 {
+    font-size: 4rem;
+  }
+}
+
 .forms-section {
   display: flex;
-  padding: 2rem 2rem 8rem;
+  flex-wrap: wrap;
+  padding-block: 2rem 8rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .forms-section {
+    text-align: center;
+    padding-top: 0;
+  }
 }
 
 .forms-section h3 {
@@ -1286,6 +1725,13 @@ form label textarea {
   font-family: "Simplisicky Fill", Sans-serif;
   font-weight: 300;
   line-height: 1;
+  margin-block: 4rem 3rem;
+}
+
+@media screen and (max-width: 57.5em) {
+  .forms-section h3 {
+    font-size: 2.6rem;
+  }
 }
 
 .forms-section h3:first-child {
@@ -1293,14 +1739,34 @@ form label textarea {
   text-align: center;
 }
 
+@media screen and (max-width: 57.5em) {
+  .forms-section h3:first-child {
+    font-size: 4rem;
+  }
+}
+
 .forms-section form {
   margin-block: 4rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 57.5em) {
+  .forms-section form {
+    margin-inline: auto;
+  }
 }
 
 .event,
 .partners {
   padding-inline: 5rem;
-  width: 50%;
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 48.75em) {
+  .event,
+  .partners {
+    flex-basis: 100%;
+  }
 }
 
 .partners {
@@ -1313,6 +1779,12 @@ form label textarea {
   margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 57.5em) {
+  #main-vegstory h2 {
+    font-size: 4rem;
+  }
+}
+
 .vegstory-info-1 {
   background: #fef7f1;
 }
@@ -1320,6 +1792,12 @@ form label textarea {
 .vegstory-info-1 .container {
   padding: 8rem 2rem;
   text-align: center;
+}
+
+@media screen and (max-width: 37.5em) {
+  .vegstory-info-1 .container {
+    padding-top: 4rem;
+  }
 }
 
 .vegstory-info-1 .container h2 {
@@ -1335,16 +1813,43 @@ form label textarea {
 .vegstory-info-2 .container {
   padding: 8rem 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 37.5em) {
+  .vegstory-info-2 .container {
+    padding-top: 4rem;
+  }
+}
+
 .vegstory-info-2 .vegstory-info-2-box {
-  width: 45%;
+  flex-basis: 45%;
+}
+
+@media screen and (max-width: 48.75em) {
+  .vegstory-info-2 .vegstory-info-2-box {
+    flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
+
+.vegstory-info-2 .vegstory-info-2-box .vegstory-info-2-list {
+  margin-inline: auto;
+  text-align: left;
 }
 
 .vegstory-info-2 .vegstory-info-2-img-box {
   align-self: center;
-  width: 50%;
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 48.75em) {
+  .vegstory-info-2 .vegstory-info-2-img-box {
+    flex-basis: 80%;
+    margin-inline: auto;
+  }
 }
 
 .vegstory-info-2 h3 {
@@ -1377,18 +1882,34 @@ form label textarea {
 
 .vegstory-info-3 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 7rem 2rem;
   color: #fafafa;
 }
 
 .vegstory-info-3 .vegstory-info-3-img-box {
-  width: 50%;
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .vegstory-info-3 .vegstory-info-3-img-box {
+    flex-basis: 80%;
+    margin-inline: auto;
+    padding-bottom: 2rem;
+  }
 }
 
 .vegstory-info-3 .vegstory-info-3-box {
-  width: 45%;
+  flex-basis: 45%;
   align-self: center;
+}
+
+@media screen and (max-width: 37.5em) {
+  .vegstory-info-3 .vegstory-info-3-box {
+    flex-basis: 100%;
+    text-align: center;
+  }
 }
 
 .vegstory-info-4 {
@@ -1397,18 +1918,40 @@ form label textarea {
 
 .vegstory-info-4 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 10rem 2rem;
   color: #fafafa;
 }
 
+@media screen and (max-width: 37.5em) {
+  .vegstory-info-4 .container {
+    padding-top: 4rem;
+  }
+}
+
 .vegstory-info-4 .vegstory-info-4-img-box {
-  width: 50%;
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 48.75em) {
+  .vegstory-info-4 .vegstory-info-4-img-box {
+    flex-basis: 80%;
+    margin-inline: auto;
+  }
 }
 
 .vegstory-info-4 .vegstory-info-4-box {
-  width: 45%;
+  flex-basis: 45%;
   align-self: center;
+}
+
+@media screen and (max-width: 48.75em) {
+  .vegstory-info-4 .vegstory-info-4-box {
+    flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
 }
 
 .product-header .container {

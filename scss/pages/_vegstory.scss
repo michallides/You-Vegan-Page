@@ -3,6 +3,10 @@
     font-size: $font-size-5;
     margin-top: 0;
     margin-bottom: 3rem;
+
+    @include responsive(em(920)) {
+      font-size: $font-size-4;
+    }
   }
 }
 
@@ -13,6 +17,10 @@
   .container {
     padding: 8rem 2rem;
     text-align: center;
+
+    @include responsive(em(600)) {
+      padding-top: 4rem;
+    }
 
     h2 {
       max-width: 75rem;
@@ -31,16 +39,37 @@
   .container {
     padding: 8rem 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @include responsive(em(600)) {
+      padding-top: 4rem;
+    }
   }
 
   .vegstory-info-2-box {
-    width: 45%;
+    flex-basis: 45%;
+
+    @include responsive(em(780)) {
+      flex-basis: 100%;
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+
+    .vegstory-info-2-list {
+      margin-inline: auto;
+      text-align: left;
+    }
   }
 
   .vegstory-info-2-img-box {
     align-self: center;
-    width: 50%;
+    flex-basis: 50%;
+
+    @include responsive(em(780)) {
+      flex-basis: 80%;
+      margin-inline: auto;
+    }
   }
 
   h3 {
@@ -74,18 +103,30 @@
 
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 7rem 2rem;
     color: $color-4;
   }
 
   .vegstory-info-3-img-box {
-    width: 50%;
+    flex-basis: 50%;
+
+    @include responsive(em(600)) {
+      flex-basis: 80%;
+      margin-inline: auto;
+      padding-bottom: 2rem;
+    }
   }
 
   .vegstory-info-3-box {
-    width: 45%;
+    flex-basis: 45%;
     align-self: center;
+
+    @include responsive(em(600)) {
+      flex-basis: 100%;
+      text-align: center;
+    }
   }
 }
 
@@ -95,17 +136,33 @@
 
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10rem 2rem;
     color: $color-4;
+
+    @include responsive(em(600)) {
+      padding-top: 4rem;
+    }
   }
 
   .vegstory-info-4-img-box {
-    width: 50%;
+    flex-basis: 50%;
+
+    @include responsive(em(780)) {
+      flex-basis: 80%;
+      margin-inline: auto;
+    }
   }
 
   .vegstory-info-4-box {
-    width: 45%;
+    flex-basis: 45%;
     align-self: center;
+
+    @include responsive(em(780)) {
+      flex-basis: 100%;
+      text-align: center;
+      padding-bottom: 2rem;
+    }
   }
 }

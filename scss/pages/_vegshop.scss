@@ -2,40 +2,72 @@
 .vegshop-main-info {
   padding: 5rem 2rem;
 
+  @include responsive(em(920)) {
+    padding-bottom: 0;
+  }
+
   h2 {
     font-size: $font-size-5;
     max-width: 85rem;
     text-align: center;
     margin-inline: auto;
+
+    @include responsive(em(920)) {
+      font-size: $font-size-4;
+    }
   }
 }
 
 // forms
 .forms-section {
   display: flex;
-  padding: 2rem 2rem 8rem;
+  flex-wrap: wrap;
+  padding-block: 2rem 8rem;
+
+  @include responsive(em(920)) {
+    text-align: center;
+    padding-top: 0;
+  }
 
   h3 {
     font-size: $font-size-4;
     font-family: $secondary-font-family;
     font-weight: $font-weight-light;
     line-height: 1;
+    margin-block: 4rem 3rem;
+
+    @include responsive(em(920)) {
+      font-size: $font-size-3-4;
+    }
 
     &:first-child {
       font-size: $font-size-5;
       text-align: center;
+
+      @include responsive(em(920)) {
+        font-size: $font-size-4;
+      }
     }
   }
 
   form {
     margin-block: 4rem;
+    text-align: left;
+
+    @include responsive(em(920)) {
+      margin-inline: auto;
+    }
   }
 }
 
 .event,
 .partners {
   padding-inline: 5rem;
-  width: 50%;
+  flex-basis: 50%;
+
+  @include responsive(em(780)) {
+    flex-basis: 100%;
+  }
 }
 
 .partners {

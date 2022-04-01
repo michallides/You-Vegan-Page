@@ -4,15 +4,26 @@
     text-align: center;
     background: $color-4;
     margin: 0;
-    padding-top: 8rem;
-    padding-bottom: 5rem;
+    padding-block: 8rem 5rem;
+    padding-inline: 2rem;
 
     @include responsive(em(920)) {
       font-size: $font-size-6;
     }
 
+    @include responsive(em(600)) {
+      font-size: $font-size-5;
+      padding-block: 5rem 3rem;
+    }
+
     a {
       color: $color-3;
+    }
+  }
+
+  h2 {
+    @include responsive(em(920)) {
+      font-size: $font-size-4;
     }
   }
 }
@@ -26,18 +37,30 @@
     align-items: center;
     justify-content: space-between;
     padding: 10rem 2rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    @include responsive(em(780)) {
+      justify-content: space-around;
+      padding-block: 5rem 7rem;
+    }
+
+    @include responsive(em(600)) {
+      padding-top: 3rem;
+    }
   }
 }
 
 .labels-heading {
   flex-basis: max-content;
 
+  @include responsive(em(780)) {
+    flex-basis: 100%;
+  }
+
   h2 {
     color: $color-4;
-
-    @include responsive(em(920)) {
-      font-size: $font-size-5;
-    }
+    text-align: center;
   }
 }
 
@@ -92,14 +115,14 @@
     @include responsive(em(920)) {
       padding-block: 5rem 12rem;
     }
+
+    @include responsive(em(600)) {
+      padding-block: 3rem 8rem;
+    }
   }
 
   h2 {
     margin-block: 2rem;
-
-    @include responsive(em(920)) {
-      font-size: $font-size-5;
-    }
 
     a {
       color: $text-color;
@@ -132,36 +155,67 @@
 
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 15rem 0 20rem;
+    padding-inline: 0;
+    padding-block: 15rem 20rem;
 
     @include responsive(em(920)) {
       padding-block: 5rem 12rem;
+    }
+
+    @include responsive(em(600)) {
+      padding-inline: 2rem;
+      padding-block: 3rem 8rem;
     }
   }
 }
 
 .main-page-vegshop-box {
-  width: 55%;
+  flex-basis: 55%;
 
-  h2 a {
-    color: $text-color;
+  @include responsive(em(600)) {
+    flex-basis: 100%;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
 
+  h2 {
     @include responsive(em(920)) {
-      font-size: $font-size-5;
+      line-height: 0;
+    }
+
+    a {
+      color: $text-color;
+
+      @include responsive(em(920)) {
+        line-height: 1.1;
+      }
     }
   }
 
   p {
     padding-right: 17rem;
+
+    @include responsive(em(600)) {
+      padding: 0;
+    }
   }
 }
 
 .main-page-vegshop-img-box {
-  width: 40%;
+  flex-basis: 40%;
+
+  @include responsive(em(600)) {
+    flex-basis: 80%;
+  }
 }
 
 .vegshop-btn {
   margin-top: 6rem;
+
+  @include responsive(em(600)) {
+    margin-inline: auto;
+  }
 }

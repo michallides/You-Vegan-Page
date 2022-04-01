@@ -5,10 +5,17 @@ footer {
     max-width: 110rem;
     padding: 8rem 2rem 6rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: $color-4;
     font-size: $font-size-0;
     font-weight: $font-weight-bold;
+
+    @include responsive(em(600)) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 4rem;
+    }
 
     a {
       color: $color-4;
@@ -16,7 +23,12 @@ footer {
   }
 
   section {
-    width: max-content;
+    flex-basis: max-content;
+
+    @include responsive(em(600)) {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
   }
 
   .logo {
@@ -31,6 +43,7 @@ footer {
   h3,
   .logo {
     margin-top: 0;
+    margin-right: 0;
     margin-bottom: 4rem;
   }
 
@@ -38,6 +51,10 @@ footer {
     display: flex;
     gap: 2.5rem;
     margin-bottom: 1.5rem;
+
+    @include responsive(em(600)) {
+      justify-content: center;
+    }
 
     i {
       font-size: $font-size-2;
@@ -66,6 +83,11 @@ footer {
 .products h3 a {
   text-transform: uppercase;
   color: $color-2;
+  font-size: $font-size-1;
+
+  @include responsive(em(920)) {
+    font-size: $font-size-0;
+  }
 }
 
 .you-vegan-list a {
@@ -75,18 +97,31 @@ footer {
   }
 }
 
-.veg-news {
-  max-width: 30rem;
+section.veg-news {
+  flex-basis: 30rem;
+
+  @include responsive(em(920)) {
+    flex-basis: 100%;
+    margin-top: 5rem;
+  }
 
   h3 {
     font-family: $secondary-font-family;
     font-size: $font-size-5;
     color: $color-3;
     margin-bottom: 1rem;
+
+    @include responsive(em(920)) {
+      font-size: $font-size-3-4;
+    }
   }
 
   p {
     line-height: 1.6;
+
+    @include responsive(em(920)) {
+      font-size: $font-size-0;
+    }
   }
 
   input,
@@ -102,6 +137,9 @@ footer {
     background: lighten($text-color, 10%);
     color: $color-4;
     margin-top: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: none;
   }
 
   .veg-news-btn {
@@ -115,4 +153,8 @@ footer {
   text-align: center;
   margin: 0;
   padding-block: 2rem;
+
+  @include responsive(em(920)) {
+    font-size: $font-size-0;
+  }
 }

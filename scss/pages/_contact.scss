@@ -1,5 +1,22 @@
 #main-contact {
-  h4,
+  h2 {
+    font-size: $font-size-5;
+    margin-bottom: 2rem;
+
+    @include responsive(em(920)) {
+      font-size: $font-size-4;
+    }
+  }
+
+  h3 {
+    font-size: $font-size-2;
+    color: $color-3;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
   p {
     margin: 0;
   }
@@ -13,12 +30,36 @@
     'contact-info contact-us'
     'direct-contact-info facturation-info';
 
+  @include responsive(em(780)) {
+    grid-template-areas:
+      'contact-info'
+      'contact-us'
+      'direct-contact-info'
+      'facturation-info';
+
+    text-align: center;
+  }
+
+  @include responsive(em(600)) {
+    padding-top: 4rem;
+  }
+
   .contact-info {
     grid-area: contact-info;
+
+    h3 {
+      margin: 0;
+    }
   }
 
   .contact-us {
     grid-area: contact-us;
+
+    form {
+      @include responsive(em(780)) {
+        margin-inline: auto;
+      }
+    }
   }
 
   .contact-info,
@@ -35,17 +76,6 @@
   .facturation-info {
     grid-area: facturation-info;
   }
-
-  h2 {
-    font-size: $font-size-5;
-    margin-bottom: 2rem;
-  }
-
-  h3 {
-    font-size: $font-size-2;
-    color: $color-3;
-    margin: 0;
-  }
 }
 
 // contact-info
@@ -55,6 +85,10 @@
   align-items: center;
   gap: 3rem;
   margin-bottom: 2rem;
+
+  @include responsive(em(780)) {
+    justify-content: center;
+  }
 }
 
 .contact-icon {
@@ -64,6 +98,10 @@
 .contact-info-socials {
   display: flex;
   gap: 4rem;
+
+  @include responsive(em(780)) {
+    justify-content: center;
+  }
 
   a {
     font-size: $font-size-3;
@@ -85,10 +123,13 @@
   align-items: center;
   margin-bottom: 2rem;
 
+  @include responsive(em(780)) {
+    justify-content: center;
+  }
+
   h3 {
     width: 100%;
     font-size: $font-size-2;
-    margin-bottom: 2rem;
   }
 }
 
@@ -103,10 +144,6 @@
 // facturation-info
 .facturation-info {
   .container div {
-    margin-bottom: 2rem;
-  }
-
-  h3 {
     margin-bottom: 2rem;
   }
 
@@ -127,13 +164,28 @@
 
   .container {
     display: flex;
-    gap: 3rem;
+    flex-wrap: wrap;
     padding: 5rem 2rem;
+    justify-content: space-between;
+
+    @include responsive(em(780)) {
+      justify-content: center;
+    }
   }
 
   .residence-box,
   .factory-box {
-    flex-basis: 54rem;
+    flex-basis: 48%;
+
+    @include responsive(em(780)) {
+      flex-basis: 80%;
+    }
+  }
+
+  .residence-box {
+    @include responsive(em(780)) {
+      margin-bottom: 5rem;
+    }
   }
 
   .contact-icon {
