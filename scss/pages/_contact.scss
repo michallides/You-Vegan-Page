@@ -191,6 +191,7 @@
   .contact-icon {
     font-size: $font-size-5;
     width: 4.4rem;
+    min-width: 4.4rem;
 
     svg {
       fill: $color-6;

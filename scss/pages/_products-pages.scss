@@ -1,16 +1,39 @@
 // product header
+#main-product-student {
+  h1 {
+    text-align: center;
+    font-size: $font-size-6;
+    margin-bottom: 7rem;
+
+    @include responsive(em(920)) {
+      font-size: $font-size-5;
+    }
+
+    @include responsive(em(600)) {
+      font-size: $font-size-4;
+      margin-block: 1.5rem 4rem;
+    }
+  }
+
+  h2 {
+    font-size: $font-size-4;
+
+    @include responsive(em(780)) {
+      font-size: $font-size-3-4;
+    }
+  }
+}
+
 .product-header {
   .container {
     padding: 3rem 2rem;
 
-    h1 {
-      text-align: center;
-      font-size: $font-size-6;
-      margin-bottom: 7rem;
-    }
-
     img {
       margin-inline: auto;
+
+      @include responsive(em(920)) {
+        max-width: 90%;
+      }
     }
   }
 }
@@ -19,21 +42,35 @@
 .product-info-1 {
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 6rem 2rem;
+
+    @include responsive(em(600)) {
+      justify-content: center;
+    }
   }
 
   .info-text {
-    width: 42%;
+    flex-basis: 42%;
+
+    @include responsive(em(600)) {
+      flex-basis: 100%;
+      text-align: center;
+    }
   }
 
   .info-img-box {
-    width: 50%;
+    flex-basis: 50%;
+
+    @include responsive(em(600)) {
+      flex-basis: 80%;
+      margin-top: 2rem;
+    }
   }
 
   h2 {
-    font-size: $font-size-4;
     margin-top: 0;
   }
 }
@@ -42,25 +79,40 @@
 .product-info-2 {
   .container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // justify-content: space-between;
     padding: 4rem 2rem;
+
+    @include responsive(em(1000)) {
+      justify-content: center;
+    }
   }
 
   .info-img-box {
-    width: 50%;
+    flex-basis: 50%;
+
+    @include responsive(em(1000)) {
+      flex-basis: 80%;
+    }
   }
 
   .info-text {
-    width: 50%;
     display: flex;
     justify-content: space-between;
+    flex-basis: 50%;
+    flex-wrap: wrap;
     align-items: center;
     background: lighten($color-2, 39%);
     font-family: $secondary-font-family;
-  }
+    padding-inline: 2rem;
 
-  h2 {
-    font-size: $font-size-4;
+    @include responsive(em(1000)) {
+      flex-basis: 80%;
+    }
+
+    @include responsive(em(600)) {
+      text-align: center;
+    }
   }
 
   p {
@@ -89,25 +141,31 @@
 
   .info-text-composition,
   .info-text-weight {
-    width: 43%;
-    padding-left: 5rem;
+    flex-basis: max-content;
+    padding-left: 1rem;
+
+    @include responsive(em(600)) {
+      flex-basis: 100%;
+    }
 
     h2,
     p {
       margin: 0;
       line-height: 1.4;
-
-      &:first-of-type {
-        margin-bottom: 1rem;
-      }
     }
   }
 
   .info-text-weight {
-    width: 60%;
+    @include responsive(em(600)) {
+      margin-top: 2rem;
+    }
 
     p {
       font-size: $font-size-4;
+
+      @include responsive(em(780)) {
+        font-size: $font-size-3-4;
+      }
     }
   }
 }
@@ -116,22 +174,31 @@
 .nutritional-data {
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 4rem 2rem;
   }
 
   .nutritional-data-table {
-    width: 38%;
+    flex-basis: 38%;
     border: 1px solid $text-color;
     padding-block: 4rem;
     font-family: $secondary-font-family;
+
+    @include responsive(em(780)) {
+      flex-basis: 100%;
+    }
 
     th {
       font-size: $font-size-4;
       font-weight: $font-weight-light;
       text-align: left;
       padding: 2rem;
+
+      @include responsive(em(780)) {
+        font-size: $font-size-3-4;
+      }
     }
 
     td {
@@ -146,13 +213,13 @@
   }
 
   .composition-alergens {
-    h2 {
-      font-size: $font-size-4;
-    }
-
-    width: 60%;
+    flex-basis: 60%;
     text-align: justify;
     padding-right: 3rem;
+
+    @include responsive(em(780)) {
+      flex-basis: 100%;
+    }
   }
 }
 
@@ -163,16 +230,19 @@
   }
 
   h2 {
-    font-size: $font-size-4;
     text-align: center;
   }
 
   .gallery-images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 25rem;
     gap: 4rem;
     padding-inline: 4rem;
+
+    @include responsive(em(600)) {
+      grid-template-columns: 1fr;
+    }
 
     img {
       object-fit: cover;
@@ -186,11 +256,14 @@
 .contact {
   .container {
     padding: 8rem 2rem;
+
+    @include responsive(em(980)) {
+      padding-top: 3rem;
+    }
   }
 
   h2 {
     max-width: 70rem;
-    font-size: $font-size-4;
     text-align: center;
     margin-inline: auto;
   }
